@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Letter Count</title>
+    <link rel="stylesheet" type = "text/css" href="stylesheet.css">
+    <script src="scripts.js"></script>
+  </head>
+  <body>
+    <div id="readme">
+      <p>Hello! Welcome to letter count!</p>
+      <p>Please enter text into the box below, click submit
+         and we will count the multiplicity of each character!</p>
+      <p id='limitation'>Please note that punctuation of any sort does not work. Please do not use anything but alphanumeric characters, and blank spaces in the form.</p>
+    </div>
+    <div id="form">
+      <form>
+        <input type="text" name="data" id="textbox">
+        <br>
+        <input type="submit" value = "Submit">
+      </form>
+    </div>
+    <div id="results">
+      <script>countLetters()</script>
+    </div>
+  </body>
+</html>

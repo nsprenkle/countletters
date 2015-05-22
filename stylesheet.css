@@ -1,0 +1,21 @@
+#readme{
+  text-align: center;
+}
+
+#form{
+  text-align: center;
+  clear: both;
+}
+
+#textbox{
+  width: 50%;
+}
+
+#limitation{
+  color:yellow;
+  background-color: red;
+}
+
+#results{
+  font-family: Courier;
+}
