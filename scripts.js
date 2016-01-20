@@ -2,6 +2,7 @@ function countLetters(){
   var text = location.search.match(/\?data=(.*)/)[1];
   text = text.replace(/\+/g, '');
   text = text.toLowerCase();
+  text = decodeURIComponent(text)
   var char_count = new Object();
   var text_length = text.length;
   for(var i = 0; i < text_length; i++){
