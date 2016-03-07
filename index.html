@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8">
     <title>Letter Count</title>
     <link rel="stylesheet" type = "text/css" href="stylesheet.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto' 
@@ -15,6 +16,9 @@
     </div>
     <div id="form">
       <form>
+        <div>
+          <input type="checkbox" name="caps" id="caps-checkbox" value="1"> Use capitals
+        </div>
         <input type="text" name="data" id="inputbox" 
                 placeholder="Enter text here">
         <input type="submit" id="submit-button" value="Submit">
@@ -37,6 +41,7 @@
     <div id="changelog">
       <strong>Changelog</strong>
       <ul>
+        <li>March 6, 2016 - Added the option to count with capital letters.</li>
         <li>March 6, 2016 - Changed font and added some visual element
 changes.</li>
         <li>January 19, 2016 - Should accurately count all characters.</li>

@@ -1,20 +1,22 @@
 function countLetters(){
-  var text = location.search.match(/\?data=(.*)/)[1];
-  text = text.replace(/\+/g, '');
-  text = text.toLowerCase();
-  text = decodeURIComponent(text)
+  var textIn = location.search.match(/data=(.*)/)[1];
+  textIn = textIn.replace(/\+/g, '');
+  if(window.location.href.indexOf("caps=1") == -1){
+    textIn = textIn.toLowerCase();
+  }
+  textIn = decodeURIComponent(textIn)
   var char_count = new Object();
-  var text_length = text.length;
-  for(var i = 0; i < text_length; i++){
-    char_count[text.charAt(i)] = 0;
+  var textIn_length = textIn.length;
+  for(var i = 0; i < textIn_length; i++){
+    char_count[textIn.charAt(i)] = 0;
   }
-  for(var i = 0; i < text_length; i++){
-    char_count[text.charAt(i)] += 1;
+  for(var i = 0; i < textIn_length; i++){
+    char_count[textIn.charAt(i)] += 1;
   }
-  text = "";
+  textIn = "";
   for(var eachProperty in char_count){
-    text += eachProperty + " " + char_count[eachProperty] + "<br>";
+    textIn += eachProperty + " " + char_count[eachProperty] + "<br>";
   }
-  document.getElementById("results").innerHTML += text;
+  document.getElementById("results").innerHTML += textIn;
 }
 
