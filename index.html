@@ -4,24 +4,27 @@
     <meta charset="UTF-8">
     <title>Letter Count</title>
     <link rel="stylesheet" type = "text/css" href="stylesheet.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto' 
           rel='stylesheet' type='text/css'>
     <script src="scripts.js"></script>
   </head>
   <body>
+    <div id="title">
+      <h1>Welcome to letter count!</h1>
+    </div>
     <div id="readme">
-      <p>Hello! Welcome to letter count!</p>
       <p>Please enter text into the box below, click submit
          and we will count the multiplicity of each character!</p>
     </div>
     <div id="form">
       <form>
+        <input type="text" name="data" id="inputbox" placeholder="Enter text here">
+        <input type="submit" id="submit-button" value="Submit">
         <div>
           <input type="checkbox" name="caps" id="caps-checkbox" value="1"> Use capitals
         </div>
-        <input type="text" name="data" id="inputbox" 
-                placeholder="Enter text here">
-        <input type="submit" id="submit-button" value="Submit">
+
       </form>
     </div>
     <p>
@@ -31,16 +34,16 @@
     </p>
     <div id="footer">
       <p>The source code for this is completely free and open source. It can
-         be found at <a href="http://www.github.com/meibenny/countletters"
-                        target="_blank">github</a>.
+         be found at <a href="http://www.github.com/meibenny/countletters" target="_blank">github</a>.
          <br>
-         Note: I make no guarantees concerning the accuracy of this tool. Everything
-         should be verified by a human.
+         Note: I make no guarantees concerning the accuracy of this tool. Everything should be verified by a human.
       </p>
     </div>
     <div id="changelog">
       <strong>Changelog</strong>
       <ul>
+        <li>March 10, 2016 - Moved the capital letter checkbox below search
+bar.</li>
         <li>March 6, 2016 - Added the option to count with capital letters.</li>
         <li>March 6, 2016 - Changed font and added some visual element
 changes.</li>

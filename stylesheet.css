@@ -1,22 +1,28 @@
-*{font-family:'Roboto';}
-
+#title{
+  text-align: center;
+  font-family: 'Montserrat';
+}
 #readme{
   text-align: center;
+  font-family: 'Roboto';
 }
 #form{
   text-align: center;
   clear: both;
+  font-family: 'Roboto';
 }
 #inputbox{
   width: 25%;
   font-size:18px;
   margin: 0 20px;
+  font-family: 'Roboto';
 }
 #submit-button{
 }
 #limitation{
   color:yellow;
   background-color: red;
+  font-family: 'Roboto';
 }
 #results{
   font-family: Courier;
@@ -24,4 +30,8 @@
 }
 #footer{
   text-align: center;
+  font-family: 'Roboto';
+}
+#changelog{
+  font-family: 'Roboto';
 }
