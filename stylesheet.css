@@ -1,37 +1,112 @@
-#title{
-  text-align: center;
-  font-family: 'Montserrat';
+body {
+    height: 100%;
+    background-color: #DD5E55;
+    color: white;
 }
-#readme{
-  text-align: center;
-  font-family: 'Roboto';
+
+a {
+    color: white;
 }
-#form{
-  text-align: center;
-  clear: both;
-  font-family: 'Roboto';
+
+a:hover {
+    color: #FFE4B4;
 }
-#inputbox{
-  width: 25%;
-  font-size:18px;
-  margin: 0 20px;
-  font-family: 'Roboto';
+
+a:visited {
+    color: #F3A9FF;
 }
-#submit-button{
+
+#title {
+    text-align: center;
+    font-family: 'Montserrat';
 }
-#limitation{
-  color:yellow;
-  background-color: red;
-  font-family: 'Roboto';
+
+#readme {
+    text-align: center;
+    font-family: 'Roboto';
 }
-#results{
-  font-family: Courier;
-  text-align: center;
+
+#form {
+    text-align: center;
+    clear: both;
+    font-family: 'Roboto';
 }
-#footer{
-  text-align: center;
-  font-family: 'Roboto';
+
+#inputbox {
+    width: 25%;
+    font-size:18px;
+    margin: 0 20px;
+    font-family: 'Roboto';
+
+    color: white;
+    border: 0px;
+    border-bottom: 2px dotted white;
+    background-color: transparent;
 }
-#changelog{
-  font-family: 'Roboto';
+
+#inputbox:focus {
+    outline: 0px;
+}
+
+#caps-checkbox {
+    display: none;
+}
+
+#caps-checkbox + label {
+    text-decoration: line-through;
+}
+
+#caps-checkbox:checked + label {
+    text-decoration: none;
+}
+#caps-checkbox:checked + label div {
+    border-style: double;
+    background-color: white;
+    border-color: #DD5E55;
+}
+
+#box {
+    display: inline-block;
+    position: relative;
+    top: 6px;
+    width: 1em;
+    height: 1em;
+    border: 3px solid white;
+    margin-right: 10px;
+}
+
+#submit-button {
+    color: white;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 3px solid white;
+    padding: 5px 10px;
+    margin-left: 10px;
+    transition: all .3s;
+}
+
+#submit-button:hover  {
+    background-color: white;
+    color: #DD5E55;
+    transition: all .3s;
+}
+
+#limitation {
+    color:yellow;
+    background-color: red;
+    font-family: 'Roboto';
+}
+
+#results {
+    font-family: Courier;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    font-family: 'Roboto';
+}
+
+#changelog {
+    font-family: 'Roboto';
 }
