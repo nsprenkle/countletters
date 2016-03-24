@@ -21,7 +21,7 @@ function countLetters(){
         textIn_length = 0;
 
     // get input from query string
-    textIn = findParameters("data");
+    textIn = findParameters("data") || "";
     document.getElementById("inputbox").innerHTML = textIn;
     textIn = textIn.replace(/\+/g, '');
 
@@ -44,7 +44,7 @@ function countLetters(){
     textIn = "";
 
     for(var eachProperty in char_count){
-        textIn += eachProperty + " " + char_count[eachProperty] + "<br>";
+        textIn += eachProperty + "<span class='multiplier'>(" + char_count[eachProperty] + "x)</span><br>";
     }
 
     document.getElementById("results").innerHTML += textIn;
