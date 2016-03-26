@@ -1,14 +1,19 @@
+html {
+	position: relative;	/* needed for sticky footer */
+}
+
 body {
     height: 100%;
 	padding-bottom: 60px;
     background-color: #DD5E55;
     color: white;
-	margin: auto;
+	/*margin: auto;*/
 	font-family: 'Roboto';
 }
 
 main {
 	margin: auto;
+	text-align: center;
 	width: 960px;
 }
 
@@ -40,17 +45,15 @@ a:visited {
 }
 
 #title {
-    text-align: center;
     font-family: 'Montserrat';
+	text-align: center;
 }
 
 #readme {
-    text-align: center;
 	margin: auto;
 }
 
 #form {
-    text-align: center;
     clear: both;
 }
 
@@ -129,18 +132,19 @@ a:visited {
 }
 
 #note {
-	
+
 }
 #changelog {
 	margin-top: 2em;
+	text-align: left;
 }
 
 /* Large Devices, Wide Screens */
-    @media only screen and (max-width : 1200px) {
-		main {
-			width: 960px;
-		}
-    }
+@media only screen and (max-width : 1200px) {
+	main {
+		width: 960px;
+	}
+}
 
 /* Medium Devices, Desktops */
 @media all and (max-width : 992px) {
