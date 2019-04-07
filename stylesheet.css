@@ -125,6 +125,7 @@ footer a:not(:first-child) {
 #results {
   font-family: Courier;
   text-align: center;
+  margin: 1rem 0;
 }
 
 .multiplier {
