@@ -1,52 +1,60 @@
 /* get input from query string */
-function findParameters(parameter){
-    //cut out the question mark at the beginning of the query string
-    var queryString = window.location.search.substring(1),
-        variables = queryString.split("&"),
-        pair = [];
+function findParameters (parameter) {
+  // cut out the question mark at the beginning of the query string
+  var queryString = window.location.search.substring(1)
 
-    for(var i = 0; i < variables.length; i++){
-        pair = variables[i].split("=");
-        if(pair[0] == parameter){
-            return pair[1];
-        }
+  var variables = queryString.split('&')
+
+  var pair = []
+
+  for (var i = 0; i < variables.length; i++) {
+    pair = variables[i].split('=')
+    if (pair[0] === parameter) {
+      return pair[1]
     }
+  }
 
-    return (false);
+  return false
 }
 
-function countLetters(){
-    var textIn = "",
-        char_count = new Object(),
-        textIn_length = 0;
+function countLetters () { // eslint-disable-line no-unused-vars
+  var textIn = ''
 
-    // get input from query string
-    textIn = findParameters("data") || "";
-    document.getElementById("inputbox").innerHTML = textIn;
-    textIn = textIn.replace(/\+/g, '');
+  var charCount = {}
 
-    if(window.location.href.indexOf("caps=1") == -1){
-        textIn = textIn.toLowerCase();
-    } else {
-        document.getElementById("caps-checkbox").checked = true;
-    }
+  var textInLength = 0
 
-    textIn = decodeURIComponent(textIn);
-    textIn_length = textIn.length;
+  // get input from query string
+  textIn = findParameters('data') || ''
+  document.getElementById('inputbox').innerHTML = textIn
+  textIn = textIn.replace(/\+/g, '')
 
-    for(var i = 0; i < textIn_length; i++){
-        char_count[textIn.charAt(i)] = 0;
-    }
+  if (window.location.href.indexOf('caps=1') === -1) {
+    textIn = textIn.toLowerCase()
+  } else {
+    document.getElementById('caps-checkbox').checked = true
+  }
 
-    for(var i = 0; i < textIn_length; i++){
-        char_count[textIn.charAt(i)] += 1;
-    }
-    textIn = "";
+  textIn = decodeURIComponent(textIn)
+  textInLength = textIn.length
 
-    for(var eachProperty in char_count){
-        textIn += eachProperty + "<span class='multiplier'>(" + char_count[eachProperty] + "x)</span><br>";
-    }
+  for (var i = 0; i < textInLength; i++) {
+    charCount[textIn.charAt(i)] = 0
+  }
 
-    document.getElementById("results").innerHTML += textIn;
+  for (var i = 0; i < textInLength; i++) { // eslint-disable-line no-redeclare
+    charCount[textIn.charAt(i)] += 1
+  }
 
+  textIn = ''
+
+  for (var eachProperty in charCount) {
+    textIn +=
+      eachProperty +
+      "<span class='multiplier'>(" +
+      charCount[eachProperty] +
+      'x)</span><br>'
+  }
+
+  document.getElementById('results').innerHTML += textIn
 }
