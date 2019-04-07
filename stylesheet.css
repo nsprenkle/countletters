@@ -19,13 +19,11 @@ main {
 
 footer {
   text-align: center;
-  font-family: 'Roboto';
   position: absolute;
   height: 60px;
   width: 100%;
   bottom: 0px;
   left: 0px;
-  background-color: #DD5E55;
 }
 
 a {
@@ -117,11 +115,6 @@ footer a:not(:first-child) {
   transition: all .3s;
 }
 
-#limitation {
-  color: yellow;
-  background-color: red;
-}
-
 #results {
   font-family: Courier;
   text-align: center;
@@ -132,11 +125,6 @@ footer a:not(:first-child) {
   font-style: italic;
   opacity: .6;
   margin-left: .25em;
-}
-
-#changelog {
-  margin-top: 2em;
-  text-align: left;
 }
 
 /* Large Devices, Wide Screens */
