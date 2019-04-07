@@ -30,14 +30,19 @@ footer {
 
 a {
   color: #FFFFFF;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #F3A9FF;
 }
 
 a:hover {
   color: #FFE4B4;
 }
 
-a:visited {
-  color: #F3A9FF;
+footer a:not(:first-child) {
+  margin-left: 1rem;
 }
 
 #title {
