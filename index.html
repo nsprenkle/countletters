@@ -1,60 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="initial-scale=1">
-    <title>Letter Count</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1">
+  <title>Letter Count</title>
 
-    <link rel="stylesheet" type = "text/css" href="stylesheet.css">
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type = "text/css" href="stylesheet.css">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 
-	<script src="scripts.js"></script>
+  <script src="scripts.js"></script>
 
 </head>
 <body>
-	<div id="title">
-		<h1>Welcome to letter count!</h1>
-	</div>
-	<main>
-		<div id="readme">
-			<p>Please enter text into the box below, click submit and we will count the multiplicity of each character!</p>
-		</div>
+  <div id="title">
+    <h1>Welcome to letter count!</h1>
+  </div>
+  <main>
+    <div id="readme">
+        <p>Please enter text into the box below, click submit and we will count the multiplicity of each character!</p>
+    </div>
 
-	    <div id="form">
-	        <form>
-	            <input type="text" name="data" id="inputbox" placeholder="Enter text here">
-	            <input type="checkbox" title="Use capitals" name="caps" id="caps-checkbox" value="1">
-	            <label for="caps-checkbox" title="Use captials"><div id="box"></div>Aa</label>
-	            <input type="submit" id="submit-button" value="Submit">
-	        </form>
-	    </div>
+    <div id="form">
+      <form>
+        <input type="text" name="data" id="inputbox" placeholder="Enter text here">
+          <input type="checkbox" title="Use capitals" name="caps" id="caps-checkbox" value="1">
+          <label for="caps-checkbox" title="Use captials"><div id="box"></div>Aa</label>
+          <input type="submit" id="submit-button" value="Submit">
+      </form>
+    </div>
 
-		<p>
-			<div id="results">
-				<script>countLetters()</script>
-			</div>
-		</p>
+    <p>
+      <div id="results">
+        <script>countLetters()</script>
+      </div>
+    </p>
 
-		<p id="note"><em>Note:</em> I make no guarantees concerning the accuracy of this tool. Everything should be verified by a human.</p>
+    <p id="note"><em>Note:</em> I make no guarantees concerning the accuracy of this tool. Everything should be verified by a human.</p>
 
-		<div id="changelog">
-			<strong>Changelog</strong>
-			<ul>
-				<li>March 24, 2016 - Added responsive design. Page reordering.</li>
-				<li>March 13, 2016 - Added custom checkbox, HTML5 page elements, autocheck of capitals box.</li>
-				<li>March 12, 2016 - Restyled page, adding color and form styling.</li>
-				<li>March 10, 2016 - Moved the capital letter checkbox below search bar.</li>
-				<li>March 6, 2016 - Added the option to count with capital letters.</li>
-				<li>March 6, 2016 - Changed font and added some visual element changes.</li>
-				<li>January 19, 2016 - Should accurately count all characters.</li>
-			</ul>
-		</div>
-	</main>
+      <div id="changelog">
+        <strong>Changelog</strong>
+        <ul>
+          <li>March 24, 2016 - Added responsive design. Page reordering.</li>
+          <li>March 13, 2016 - Added custom checkbox, HTML5 page elements, autocheck of capitals box.</li>
+          <li>March 12, 2016 - Restyled page, adding color and form styling.</li>
+          <li>March 10, 2016 - Moved the capital letter checkbox below search bar.</li>
+          <li>March 6, 2016 - Added the option to count with capital letters.</li>
+          <li>March 6, 2016 - Changed font and added some visual element changes.</li>
+          <li>January 19, 2016 - Should accurately count all characters.</li>
+        </ul>
+      </div>
+  </main>
 
-	<footer>
-		<p>The source code for this is completely free and open source.</br>
-		It can be found at <a href="http://www.github.com/meibenny/countletters" target="_blank">github</a>.</p>
-	</footer>
+  <footer>
+    <p>The source code for this is completely free and open source.</br>
+      It can be found at <a href="http://www.github.com/meibenny/countletters" target="_blank">github</a>.</p>
+  </footer>
 </body>
 </html>

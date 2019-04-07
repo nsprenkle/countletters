@@ -1,177 +1,177 @@
 html {
-	position: relative;	/* needed for sticky footer */
+  position: relative;
+  /* needed for sticky footer */
 }
 
 body {
-    height: 100%;
-	padding-bottom: 60px;
-    background-color: #DD5E55;
-    color: white;
-	/*margin: auto;*/
-	font-family: 'Roboto';
+  height: 100%;
+  padding-bottom: 60px;
+  background-color: #DD5E55;
+  color: #FFFFFF;
+  font-family: 'Roboto';
 }
 
 main {
-	margin: auto;
-	text-align: center;
-	width: 960px;
+  margin: auto;
+  text-align: center;
+  width: 960px;
 }
 
 footer {
-    text-align: center;
-    font-family: 'Roboto';
-	position: absolute;
-	height: 60px;
-	width: 100%;
-	bottom: 0px;
-	left: 0px;
-	background-color: #DD5E55;
+  text-align: center;
+  font-family: 'Roboto';
+  position: absolute;
+  height: 60px;
+  width: 100%;
+  bottom: 0px;
+  left: 0px;
+  background-color: #DD5E55;
 }
 
-footer::before{
-	content("<hr>");
+footer::before {
+  content("<hr>");
 }
 
 a {
-    color: white;
+  color: #FFFFFF;
 }
 
 a:hover {
-    color: #FFE4B4;
+  color: #FFE4B4;
 }
 
 a:visited {
-    color: #F3A9FF;
+  color: #F3A9FF;
 }
 
 #title {
-    font-family: 'Montserrat';
-	text-align: center;
+  font-family: 'Montserrat';
+  text-align: center;
 }
 
 #readme {
-	margin: auto;
+  margin: auto;
 }
 
 #form {
-    clear: both;
+  clear: both;
 }
 
 #inputbox {
-    width: 25%;
-    font-size:18px;
-    margin: 0 20px;
+  width: 25%;
+  font-size: 18px;
+  margin: 0 20px;
 
-    color: white;
-    border: 0px;
-    border-bottom: 2px dotted white;
-    background-color: transparent;
+  color: #FFFFFF;
+  border: 0px;
+  border-bottom: 2px dotted #FFFFFF;
+  background-color: transparent;
 }
 
 #inputbox:focus {
-    outline: 0px;
+  outline: 0px;
 }
 
 #caps-checkbox {
-    display: none;
+  display: none;
 }
 
-#caps-checkbox + label {
-    text-decoration: line-through;
+#caps-checkbox+label {
+  text-decoration: line-through;
 }
 
-#caps-checkbox:checked + label {
-    text-decoration: none;
+#caps-checkbox:checked+label {
+  text-decoration: none;
 }
-#caps-checkbox:checked + label div {
-    border-style: double;
-    background-color: white;
-    border-color: #DD5E55;
+
+#caps-checkbox:checked+label div {
+  border-style: double;
+  background-color: #FFFFFF;
+  border-color: #DD5E55;
 }
 
 #box {
-    display: inline-block;
-    position: relative;
-    top: 6px;
-    width: 1em;
-    height: 1em;
-    border: 3px solid white;
-    margin-right: 10px;
+  display: inline-block;
+  position: relative;
+  top: 6px;
+  width: 1em;
+  height: 1em;
+  border: 3px solid #FFFFFF;
+  margin-right: 10px;
 }
 
 #submit-button {
-    color: white;
-    background-color: transparent;
-    border-radius: 10px;
-    border: 3px solid white;
-    padding: 5px 10px;
-    margin-left: 10px;
-    transition: all .3s;
+  color: #FFFFFF;
+  background-color: transparent;
+  border-radius: 10px;
+  border: 3px solid #FFFFFF;
+  padding: 5px 10px;
+  margin-left: 10px;
+  transition: all .3s;
 }
 
-#submit-button:hover  {
-    background-color: white;
-    color: #DD5E55;
-    transition: all .3s;
+#submit-button:hover {
+  background-color: #FFFFFF;
+  color: #DD5E55;
+  transition: all .3s;
 }
 
 #limitation {
-    color:yellow;
-    background-color: red;
+  color: yellow;
+  background-color: red;
 }
 
 #results {
-    font-family: Courier;
-    text-align: center;
+  font-family: Courier;
+  text-align: center;
 }
 
 .multiplier {
-	font-style: italic;
-	opacity: .6;
-	margin-left: .25em;
+  font-style: italic;
+  opacity: .6;
+  margin-left: .25em;
 }
 
-#note {
+#note {}
 
-}
 #changelog {
-	margin-top: 2em;
-	text-align: left;
+  margin-top: 2em;
+  text-align: left;
 }
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-	main {
-		width: 960px;
-	}
+  main {
+    width: 960px;
+  }
 }
 
 /* Medium Devices, Desktops */
 @media all and (max-width : 992px) {
-	main {
-		width: 750px;
-	}
+  main {
+    width: 750px;
+  }
 }
 
 /* Small Devices, Tablets */
 @media all and (max-width : 768px) {
-	main {
-		width: 400px;
-	}
-	#inputbox {
-		width: 100%;
-		margin: 0 0 10px 0;
-	}
+  main {
+    width: 400px;
+  }
+
+  #inputbox {
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
 }
 
 /* Extra Small Devices, Phones */
 @media all and (max-width : 480px) {
-	main {
-		width: auto;
-	}
+  main {
+    width: auto;
+  }
 
 }
 
 /* Custom, iPhone Retina */
-@media all and (max-width : 320px) {
-}
+@media all and (max-width : 320px) {}
