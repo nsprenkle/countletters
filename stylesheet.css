@@ -28,10 +28,6 @@ footer {
   background-color: #DD5E55;
 }
 
-footer::before {
-  content("<hr>");
-}
-
 a {
   color: #FFFFFF;
 }
@@ -131,8 +127,6 @@ a:visited {
   opacity: .6;
   margin-left: .25em;
 }
-
-#note {}
 
 #changelog {
   margin-top: 2em;
